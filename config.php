@@ -2,8 +2,11 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    'baseUrl' => 'http://localhost:3000',
+
+    'siteTitle' => 'Yusuf Taufiqurrahman - Software Developer',
+    'siteName' => 'Yusuf Taufiqurrahman Personal Site',
+    'siteDescription' => 'Everything about me as a Software Developer',
+
     'collections' => [],
 ];
