@@ -1,14 +1,7 @@
 module.exports = {
-  purge: [
-    'source/**/*.blade.php',
-    'source/**/*.md',
-    'source/**/*.html',
+  darkMode: 'class',
+  content: [
+    'source/_layouts/**/*.blade.php',
+    'source/index.blade.php',
   ],
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 };
