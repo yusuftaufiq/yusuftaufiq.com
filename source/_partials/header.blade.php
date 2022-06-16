@@ -1,7 +1,7 @@
-<header class="p-4">
+<header class="p-4 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-blue-400">
   <nav class="navbar container flex justify-between md:h-16 mx-auto">
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
-    <x-animated-container tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex justify-start p-4">
+    <x-animated-container tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex justify-start p-4 h-fit">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32"
         class="w-8 h-8 dark:text-blue-400">
         <path class="a"
@@ -20,8 +20,7 @@
       @endforeach
     </ul>
     <x-animated-container tag="label" for="hbr" class="
-      flex justify-end p-4 
-      cursor-pointer
+      md:hidden inline p-4 cursor-pointer h-fit
       peer-checked:text-blue-700
       peer-checked:-translate-y-1
       peer-checked:scale-110
