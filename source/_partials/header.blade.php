@@ -1,7 +1,7 @@
 <header class="p-4">
-  <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
-  <nav class="navbar peer-checked:navbar-active container flex justify-between md:h-16 mx-auto">
-    <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex justify-start p-4 tw-animated">
+  <nav class="navbar container flex justify-between md:h-16 mx-auto">
+    <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
+    <x-animated-container tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex justify-start p-4">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32"
         class="w-8 h-8 dark:text-blue-400">
         <path class="a"
@@ -9,16 +9,30 @@
         <path class="a" d="m8.8 15.4l-5.3 8.3 8.3 5.2-3.4 0.8-8.2-5.3 5.2-8.2z" />
         <path class="a" d="m26.6 16.2l5.1 8.2-8.2 5.3-3.4-0.8 8.3-5.2-5.2-8.3z" />
       </svg>
-    </a>
-    <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden navbar-menu-list md:space-y-0 md:space-x-3 md:flex">
+    </x-animated-container>
+    <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden md:space-y-0 md:space-x-3 md:flex peer-checked:block">
       @foreach ($navigationItems as $item)
-        <x-navigation-item :link="$item->get('link')" :title="$item->get('title')" />
+        <li class="flex items-center place-content-center px-4 -mb-1 border-b-2 dark:border-transparent dark:border-blue-400">
+          <x-animated-container tag="a" rel="noopener noreferrer" href="{{ $item->get('link') }}">
+            {{ $item->get('title') }}
+          </x-animated-container>
+        </li>
       @endforeach
     </ul>
-    <label for="hbr" class="navbar-toggle flex justify-end p-4 md:hidden tw-animated">
+    <x-animated-container tag="label" for="hbr" class="
+      flex justify-end p-4 
+      cursor-pointer
+      peer-checked:text-blue-700
+      peer-checked:-translate-y-1
+      peer-checked:scale-110
+      peer-checked:transition
+      peer-checked:ease-in-out
+      peer-checked:delay-150
+      peer-checked:duration-300
+    ">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
-    </label>
+    </x-animated-container>
   </nav>
 </header>

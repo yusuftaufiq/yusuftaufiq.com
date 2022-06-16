@@ -1,37 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .tw-animated {
-    @apply transition;
-    @apply ease-in-out;
-    @apply delay-150;
-    @apply duration-300;
-    @apply hover:text-blue-700;
-    @apply hover:-translate-y-1;
-    @apply hover:scale-110;
-    @apply active:text-blue-700;
-    @apply active:-translate-y-1;
-    @apply active:scale-110;
-    @apply focus:text-blue-700;
-    @apply focus:-translate-y-1;
-    @apply focus:scale-110;
-  }
-
-  .navbar-active {
-    .navbar-menu-list {
-      @apply block;
-    }
-
-    .navbar-toggle {
-      @apply text-blue-700;
-      @apply -translate-y-1;
-      @apply scale-110;
-      @apply transition;
-      @apply ease-in-out;
-      @apply delay-150;
-      @apply duration-300;
-    }
-  }
-}
