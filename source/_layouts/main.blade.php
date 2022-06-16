@@ -22,7 +22,9 @@
 </head>
 
 <body class="min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans antialiased">
-  @yield('body')
+  <div class="space-y-12 dark:bg-gray-800 dark:text-gray-100">
+    @include('_partials.header')
+  </div>
 </body>
 
 </html>
