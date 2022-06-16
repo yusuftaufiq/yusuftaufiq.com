@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="{{ $page->language ?? 'en' }}" class="h-full relative">
 
 <head>
   <meta charset="utf-8">
@@ -21,9 +21,13 @@
   <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </head>
 
-<body class="min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans antialiased">
-  <div class="space-y-12 dark:bg-gray-800 dark:text-gray-100">
+<body class="h-full bg-gray-100 text-gray-800 leading-normal font-sans antialiased relative m-0 p-0 dark:bg-gray-800 dark:text-gray-100">
+  <div class="swiper h-full w-full">
     @include('_partials.header')
+    <div class="swiper-wrapper">
+      @yield('slides')
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
 </body>
 
