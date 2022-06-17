@@ -1,10 +1,10 @@
 // @ts-check
 
-import createDarkMode from './create-dark-mode';
-import createTypedDescription from './create-typed-description';
-import createTippy from './create-tippy';
-import createSwiper from './create-swiper';
-import createFa from './create-fa';
+import createDarkMode from './home/create-dark-mode';
+import createTypedDescription from './home/create-typed-description';
+import createTippy from './global/create-tippy';
+import createSwiper from './global/create-swiper';
+import createFa from './global/create-fa';
 
 const executeAllCommands = () => {
   [

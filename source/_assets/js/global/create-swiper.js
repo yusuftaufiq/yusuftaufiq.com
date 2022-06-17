@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 /**
- * @type {import('./command').Command}
+ * @type {import('../contracts/command').Command}
  */
 const createSwiper = {
   execute: () => {

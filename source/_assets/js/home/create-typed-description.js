@@ -3,7 +3,7 @@
 import Typed from 'typed.js';
 
 /**
- * @type {import('./command').Command}
+ * @type {import('../contracts/command').Command}
  */
 const createTypedDescription = {
   execute: () => {
