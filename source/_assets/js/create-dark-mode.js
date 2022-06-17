@@ -1,12 +1,12 @@
 // @ts-check
 
 const changeToDarkMode = () => {
-  localStorage.theme = 'dark'
+  localStorage.theme = 'dark';
   document.documentElement.classList.add('dark');
 };
 
 const changeToLightMode = () => {
-  localStorage.theme = 'light'
+  localStorage.theme = 'light';
   document.documentElement.classList.remove('dark');
 };
 
@@ -32,4 +32,4 @@ const createDarkMode = {
   },
 };
 
-export { createDarkMode };
+export default createDarkMode;

@@ -7,13 +7,13 @@ import Typed from 'typed.js';
  */
 const createTypedDescription = {
   execute: () => {
-    new Typed('.js-typed', {
+    const typed = new Typed('.js-typed', {
       stringsElement: '.js-typed-strings',
       typeSpeed: 70,
       backSpeed: 40,
       backDelay: 4000,
-    });  
-  }
+    });
+  },
 };
 
-export { createTypedDescription };
+export default createTypedDescription;

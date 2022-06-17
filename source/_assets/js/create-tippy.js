@@ -16,4 +16,4 @@ const createTippy = {
   },
 };
 
-export { createTippy };
+export default createTippy;

@@ -13,4 +13,4 @@ const createFa = {
   },
 };
 
-export { createFa };
+export default createFa;
