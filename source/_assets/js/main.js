@@ -1,10 +1,12 @@
 // @ts-check
 
+import { createTypedDescription } from "./create-typed-description";
 import { createTippy } from "./create-tippy";
 import { createSwiper } from "./create-swiper";
+import { createFa } from "./create-fa";
 
 const executeAllCommands = () => {
-  [createTippy, createSwiper].forEach((command) => {
+  [createTypedDescription, createTippy, createSwiper, createFa].forEach((command) => {
     command.execute()
   });
 };

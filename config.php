@@ -12,5 +12,15 @@ return [
         ['title' => 'Home', 'link' => '#home'],
         ['title' => 'About', 'link' => '#about'],
     ],
-    'collections' => [],
+    'siteSections' => [
+        'home' => [
+            'descriptions' => [
+                'Hi, there!',
+                'My name is Yusuf Taufiqurrahman',
+                'I am a Software Developer',
+                'I am a Tech Enthusiast',
+                'Keep scrolling to know more about me!',
+            ],
+        ],
+    ],
 ];
