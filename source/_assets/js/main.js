@@ -1,9 +1,10 @@
 // @ts-check
 
+import { createTippy } from "./create-tippy";
 import { createSwiper } from "./create-swiper";
 
 const executeAllCommands = () => {
-  [createSwiper].forEach((command) => {
+  [createTippy, createSwiper].forEach((command) => {
     command.execute()
   });
 };
