@@ -12,9 +12,6 @@
     'active:text-blue-400',
     'active:-translate-y-1',
     'active:scale-110',
-    'focus:text-blue-400',
-    'focus:-translate-y-1',
-    'focus:scale-110',
   ])
 ]) }}>
   {{ $slot }}

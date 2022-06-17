@@ -12,8 +12,11 @@
     </x-animated-container>
     <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden md:space-y-0 md:space-x-3 md:flex peer-checked:block">
       @foreach ($page->siteNavigationItems as $item)
-        <li class="flex items-center place-content-center px-4 border-b-2 dark:border-transparent dark:border-blue-400">
-          <x-animated-container tag="a" rel="noopener noreferrer" href="{{ $item->link }}">
+        <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
+          <x-animated-container
+            class="js-nav-item {{ $loop->index === 0 ? 'text-blue-400 -translate-y-1 scale-110' : '' }}"
+            tag="a" rel="noopener noreferrer" href="{{ $item->link }}"
+          >
             {{ $item->title }}
           </x-animated-container>
         </li>
@@ -21,7 +24,7 @@
     </ul>
     <x-animated-container tag="label" for="hbr" class="
       md:hidden inline p-4 cursor-pointer h-fit
-      peer-checked:text-blue-700
+      peer-checked:text-blue-400
       peer-checked:-translate-y-1
       peer-checked:scale-110
       peer-checked:transition
