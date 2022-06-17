@@ -3,7 +3,7 @@
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
     <x-animated-container data-tippy-content="Y for Yusuf" tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="js-tippy flex justify-start p-4 h-fit">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32"
-        class="w-8 h-8 dark:text-blue-400">
+        class="w-8 h-8">
         <path class="a"
           d="m2.9 2.4h9.7l0.4 0.7c0.3 0.4 0.7 1.1 0.9 1.4 0.4 0.6 0.4 0.8-1.1 3l-0.8-1.2c-0.7-1.2-0.8-1.3-4.1-1.3l6.8 9.8v8.9h2.6v-8.8l3.3-4.8c1.8-2.6 3.2-4.8 3.2-4.9 0-0.1-0.7-0.2-3.1-0.2l-4.7 6.9-0.7-0.9c-0.3-0.4-0.6-1-0.6-1.2 0-0.2 1-1.9 4.7-7.4h4.7c2.6 0 4.7 0 4.7 0.1 0 0.1-1.9 3-8.8 12.9v10.9h-8v-10.8l-4.6-6.5z" />
         <path class="a" d="m8.8 15.4l-5.3 8.3 8.3 5.2-3.4 0.8-8.2-5.3 5.2-8.2z" />
@@ -11,10 +11,10 @@
       </svg>
     </x-animated-container>
     <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden md:space-y-0 md:space-x-3 md:flex peer-checked:block">
-      @foreach ($navigationItems as $item)
-        <li class="flex items-center place-content-center px-4 -mb-1 border-b-2 dark:border-transparent dark:border-blue-400">
-          <x-animated-container tag="a" rel="noopener noreferrer" href="{{ $item->get('link') }}">
-            {{ $item->get('title') }}
+      @foreach ($page->siteNavigationItems as $item)
+        <li class="flex items-center place-content-center px-4 border-b-2 dark:border-transparent dark:border-blue-400">
+          <x-animated-container tag="a" rel="noopener noreferrer" href="{{ $item->link }}">
+            {{ $item->title }}
           </x-animated-container>
         </li>
       @endforeach
