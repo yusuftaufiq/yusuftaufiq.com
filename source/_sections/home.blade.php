@@ -28,6 +28,8 @@
     >
       <i class="fas fa-sun"></i> Prefer light mode
     </x-button>
-    <x-button type="secondary" class="js-swiper-button-next">Continue</x-button>
+    <x-button type="secondary" class="js-swiper-button-next group">
+      <i class="animate-bounce group-hover:animate-none fas fa-sort-down"></i> Continue
+    </x-button>
   </div>
 </section>
