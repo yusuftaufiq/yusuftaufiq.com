@@ -32,7 +32,7 @@
       'active:bg-gray-800',
       'active:border-gray-100',
       'dark:text-gray-800',
-      'dark:bg-blue-400',
+      'dark:bg-cyan-400',
       'dark:hover:text-gray-800',
       'dark:hover:bg-gray-100',
       'dark:hover:border-gray-800',

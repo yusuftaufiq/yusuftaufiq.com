@@ -1,0 +1,8 @@
+.swiper-pagination-bullet {
+  @apply dark:!bg-gray-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-gray-800;
+  @apply dark:!bg-gray-100;
+}

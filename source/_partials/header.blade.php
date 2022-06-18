@@ -1,4 +1,4 @@
-<header class="p-4 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-blue-400">
+<header class="p-4 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-cyan-400">
   <nav class="navbar container flex justify-between md:h-16 mx-auto">
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
     <x-animated-container data-tippy-content="Y for Yusuf" tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="js-tippy flex justify-start p-4 h-fit">
@@ -14,7 +14,7 @@
       @foreach ($page->siteNavigationItems as $item)
         <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
           <x-animated-container
-            class="js-nav-item {{ $loop->index === 0 ? 'text-blue-400 -translate-y-1 scale-110' : '' }}"
+            class="js-nav-item {{ $loop->index === 0 ? 'text-cyan-900 dark:text-cyan-400 -translate-y-1 scale-110' : '' }}"
             tag="a" rel="noopener noreferrer" href="{{ $item->link }}"
           >
             {{ $item->title }}
@@ -24,7 +24,8 @@
     </ul>
     <x-animated-container tag="label" for="hbr" class="
       md:hidden inline p-4 cursor-pointer h-fit
-      peer-checked:text-blue-400
+      peer-checked:text-cyan-900
+      peer-checked:dark:text-cyan-400
       peer-checked:-translate-y-1
       peer-checked:scale-110
       peer-checked:transition
