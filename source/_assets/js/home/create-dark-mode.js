@@ -22,7 +22,7 @@ const changeTheme = () => {
 };
 
 /**
- * @type {import('../contracts/command').Command}
+ * @type {import('../contracts/command').default}
  */
 const createDarkMode = {
   execute: () => {

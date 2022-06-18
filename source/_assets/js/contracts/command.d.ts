@@ -1,3 +1,5 @@
-export interface Command {
+interface Command {
   execute(): void;
 }
+
+export default Command;

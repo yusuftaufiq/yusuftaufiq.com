@@ -5,7 +5,7 @@ import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/shift-away.css';
 
 /**
- * @type {import('../contracts/command').Command}
+ * @type {import('../contracts/command').default}
  */
 const createTippy = {
   execute: () => {

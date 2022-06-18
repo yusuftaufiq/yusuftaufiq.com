@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 /* eslint-enable import/no-unresolved */
 
 /**
- * @type {import('../contracts/command').Command}
+ * @type {import('../contracts/command').default}
  */
 const createSwiper = {
   execute: () => {
