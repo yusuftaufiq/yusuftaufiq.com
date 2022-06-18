@@ -1,4 +1,4 @@
-<section class="container h-full flex flex-col justify-center items-center mt-12 px-6 py-8 mx-auto text-center md:px-10 lg:px-32 xl:max-w-3xl">
+<x-section class="text-center">
   <div class="js-typed-strings">
     @foreach ($page->siteSections->home->descriptions as $description)
       <h1 class="text-4xl font-bold leading-none sm:text-5xl">
@@ -32,4 +32,4 @@
       <i class="animate-bounce group-hover:animate-none fas fa-sort-down"></i> Continue
     </x-button>
   </div>
-</section>
+</x-section>

@@ -20,9 +20,7 @@ const executeAllCommands = () => {
 
 (async () => {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      executeAllCommands();
-    });
+    document.addEventListener('DOMContentLoaded', executeAllCommands);
   } else {
     executeAllCommands();
   }

@@ -1,5 +1,5 @@
 <header class="p-4 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-cyan-400">
-  <nav class="navbar container flex justify-between md:h-16 mx-auto">
+  <nav class="navbar container flex justify-between md:h-16 mx-auto min-w-full">
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
     <x-animated-container data-tippy-content="Y for Yusuf" tag="a" rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="js-tippy flex justify-start p-4 h-fit">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32"
@@ -11,13 +11,13 @@
       </svg>
     </x-animated-container>
     <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden md:space-y-0 md:space-x-3 md:flex peer-checked:block">
-      @foreach ($page->siteNavigationItems as $item)
+      @foreach ($page->siteSections->keys() as $item)
         <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
           <x-animated-container
             class="js-nav-item {{ $loop->index === 0 ? 'text-cyan-900 dark:text-cyan-400 -translate-y-1 scale-110' : '' }}"
-            tag="a" rel="noopener noreferrer" href="{{ $item->link }}"
+            tag="a" rel="noopener noreferrer" href="#{{ Illuminate\Support\Str::lower($item) }}"
           >
-            {{ $item->title }}
+            {{ Illuminate\Support\Str::headline($item) }}
           </x-animated-container>
         </li>
       @endforeach
