@@ -26,5 +26,27 @@ return [
                 <span class="js-tippy" data-tippy-content="What challenges do I like?">Learning new things is also an exciting challenge for me!</span>
             HTML,
         ],
+        /**
+         * There is still a bug when the icon in a category is more than 6.
+         *
+         * @see https://simpleicons.org/ for a list of all available icons.
+         */
+        'skills' => [
+            'proficient' => [
+                ['name' => 'PHP', 'icon' => 'php'],
+                ['name' => 'Laravel', 'icon' => 'laravel'],
+                ['name' => 'CodeIgniter', 'icon' => 'codeigniter'],
+                ['name' => 'PostgreSQL', 'icon' => 'postgresql'],
+                ['name' => 'JavaScript', 'icon' => 'javascript'],
+                ['name' => 'jQuery', 'icon' => 'jquery'],
+            ],
+            'familiar' => [
+                ['name' => 'Git', 'icon' => 'git'],
+                ['name' => 'GitHub Actions', 'icon' => 'github'],
+                ['name' => 'Docker', 'icon' => 'docker'],
+                ['name' => 'Tailwind', 'icon' => 'tailwindcss'],
+                ['name' => 'Bootstrap', 'icon' => 'bootstrap'],
+            ],
+        ],
     ],
 ];
