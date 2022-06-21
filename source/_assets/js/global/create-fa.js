@@ -1,14 +1,16 @@
 // @ts-check
 
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faMoon, faSun, faSortDown } from '@fortawesome/free-solid-svg-icons';
+import { dom, library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faAngleDoubleDown, faBars, faMoon, faSun,
+} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * @type {import('../contracts/command').default}
  */
 const createFa = {
   execute: () => {
-    library.add(faMoon, faSun, faSortDown);
+    library.add(faAngleDoubleDown, faBars, faMoon, faSun);
     dom.watch();
   },
 };

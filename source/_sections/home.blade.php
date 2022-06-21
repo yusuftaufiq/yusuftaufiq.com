@@ -11,25 +11,11 @@
     <span class="js-typed"></span>
   </div>
 
-  <p class="px-8 mt-8 mb-12 text-lg">Click the continue button below or scroll down to see the next page.</p>
+  <p class="px-8 mt-8 mb-12 text-lg">Swipe or scroll down to see the next page.</p>
 
-  <div class="flex flex-wrap justify-center">
-    <x-button
-      type="primary"
-      class="js-tippy js-dark-mode dark:hidden"
-      data-tippy-content="Are you a vampire?"
-    >
-      <i class="fas fa-moon"></i> Dark mode please
-    </x-button>
-    <x-button
-      type="primary"
-      class="js-tippy js-light-mode hidden dark:block"
-      data-tippy-content="Let me guess, you are definitely not in a dark room"
-    >
-      <i class="fas fa-sun"></i> Prefer light mode
-    </x-button>
-    <x-button type="secondary" class="js-swiper-button-next group">
-      <i class="animate-bounce group-hover:animate-none fas fa-sort-down"></i> Continue
-    </x-button>
+  <div class="flex flex-wrap justify-center align-center">
+    <x-animated-container class="js-swiper-button-next group cursor-pointer">
+      <i class="animate-bounce group-hover:animate-none fas fa-angle-double-down h-6 w-6"></i>
+    </x-animated-container>
   </div>
 </x-section>

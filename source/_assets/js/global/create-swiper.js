@@ -1,6 +1,6 @@
 // @ts-check
 
-import Swiper, { Navigation, Pagination, Mousewheel } from 'swiper';
+import Swiper, { Mousewheel, Navigation, Pagination } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,7 +11,7 @@ const initSwiper = () => new Swiper('.js-swiper', {
   direction: 'vertical',
   slidesPerView: 1,
   spaceBetween: 30,
-  mousewheel: true,
+  preventInteractionOnTransition: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
