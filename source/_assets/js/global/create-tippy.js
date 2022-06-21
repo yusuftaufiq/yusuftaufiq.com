@@ -1,8 +1,8 @@
 // @ts-check
 
 import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/shift-away.css';
+import 'tippy.js/dist/tippy.css';
 
 /**
  * @type {import('../contracts/command').default}

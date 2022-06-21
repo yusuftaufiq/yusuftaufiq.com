@@ -1,6 +1,7 @@
 // @ts-check
 
 import Swiper, { Mousewheel, Navigation, Pagination } from 'swiper';
+import getActiveClassesOf from '../modules/active-class';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -29,9 +30,7 @@ const createSwiper = {
     const swiper = initSwiper();
 
     const navigationItems = document.querySelectorAll('.js-nav-item');
-    const activeClasses = Array.from(navigationItems[0].classList)
-      .filter((className) => className.includes('active:'))
-      .map((className) => className.replace('active:', ''));
+    const activeClasses = getActiveClassesOf(navigationItems[0]);
 
     swiper.on('slideChange', (slide) => {
       navigationItems[slide.previousIndex].classList.remove(...activeClasses);

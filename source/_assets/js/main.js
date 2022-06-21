@@ -1,18 +1,18 @@
 // @ts-check
 
+import createFa from './global/create-fa';
+import createSwiper from './global/create-swiper';
+import createTippy from './global/create-tippy';
 import createDarkMode from './home/create-dark-mode';
 import createTypedDescription from './home/create-typed-description';
-import createTippy from './global/create-tippy';
-import createSwiper from './global/create-swiper';
-import createFa from './global/create-fa';
 
 const executeAllCommands = () => {
   [
+    createFa,
+    createSwiper,
+    createTippy,
     createDarkMode,
     createTypedDescription,
-    createTippy,
-    createSwiper,
-    createFa,
   ].forEach((command) => {
     command.execute();
   });
