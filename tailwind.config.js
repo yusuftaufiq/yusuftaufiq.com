@@ -7,4 +7,12 @@ module.exports = {
     'source/_sections/**/*.blade.php',
     'source/index.blade.php',
   ],
+  theme: {
+    extend: {
+      screens: {
+        'xs-h': { raw: '(min-height: 600px)' },
+        'sm-h': { raw: '(min-height: 710px)' },
+      },
+    },
+  },
 };
