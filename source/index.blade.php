@@ -4,4 +4,5 @@
   <div class="swiper-slide">@include('_sections.home')</div>
   <div class="swiper-slide">@include('_sections.about')</div>
   <div class="swiper-slide">@include('_sections.skill')</div>
+  <div class="swiper-slide">@include('_sections.project')</div>
 @endsection

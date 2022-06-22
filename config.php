@@ -58,5 +58,58 @@ return [
                 ['name' => 'Docker', 'icon' => 'docker'],
             ],
         ],
+        'projects' => [
+            [
+                'title' => 'Laravel Books API',
+                'description' => 'An application to scrape data and provide results in a RESTful API format.',
+                'tech_stack' => ['PHP', 'Laravel'],
+                'links' => [
+                    [
+                        'name' => 'GitHub',
+                        'icon' => 'github',
+                        'url' => 'https://github.com/yusuftaufiq/laravel-books-api',
+                    ],
+                    [
+                        'name' => 'Postman Documentation',
+                        'icon' => 'postman',
+                        'url' => 'https://documenter.getpostman.com/view/14291055/UVyoVcj5',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'CodeIgniter 3 IDE Helper',
+                'description' => 'CLI application to generate IDE helper for CodeIgniter 3.',
+                'tech_stack' => ['PHP', 'Docker', 'CI/CD (GitHub Actions)'],
+                'links' => [
+                    [
+                        'name' => 'GitHub',
+                        'icon' => 'github',
+                        'url' => 'https://github.com/yusuftaufiq/codeigniter3-ide-helper',
+                    ],
+                    [
+                        'name' => 'Packagist',
+                        'icon' => 'packagist',
+                        'url' => 'https://packagist.org/packages/haemanthus/codeigniter3-ide-helper',
+                    ],
+                    [
+                        'name' => 'Docker Hub',
+                        'icon' => 'docker',
+                        'url' => 'https://hub.docker.com/repository/docker/haemanthus/codeigniter3-ide-helper',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Personal Portfolio Page',
+                'description' => 'The page you are viewing now.',
+                'tech_stack' => ['JavaScript', 'Blade', 'Tailwind CSS'],
+                'links' => [
+                    [
+                        'name' => 'GitHub',
+                        'icon' => 'github',
+                        'url' => 'https://github.com/yusuftaufiq/yusuftaufiq',
+                    ],
+                ],
+            ],
+        ],
     ],
 ];
