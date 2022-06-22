@@ -3,6 +3,7 @@
 import Swiper, { Autoplay, Navigation } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
+import { swiperOf } from '../global/helpers';
 /* eslint-enable import/no-unresolved */
 
 /**
@@ -11,15 +12,6 @@ import 'swiper/css';
 const createHorizontalSkillNavigation = {
   execute: () => {
     document.querySelectorAll('.js-swiper-skills').forEach((element) => {
-      /**
-       * @param {Number} length
-       */
-      const evaluateMaxLengthOfChild = (length) => {
-        const carouselChildren = element.querySelectorAll('.swiper-slide').length;
-
-        return (length >= carouselChildren ? carouselChildren : length);
-      };
-
       if (element instanceof HTMLElement) {
         const swiper = new Swiper(element, {
           modules: [Autoplay, Navigation],
@@ -35,19 +27,23 @@ const createHorizontalSkillNavigation = {
             delay: 5000,
             disableOnInteraction: false,
           },
-          breakpoints: {
-            350: {
-              slidesPerView: evaluateMaxLengthOfChild(2),
-            },
-            640: {
-              loop: false,
-              slidesPerView: evaluateMaxLengthOfChild(3),
-            },
-            768: {
-              loop: false,
-              slidesPerView: evaluateMaxLengthOfChild(4),
-            },
-          },
+          breakpoints: (() => {
+            const swiperOfElement = swiperOf(element);
+
+            return {
+              350: {
+                slidesPerView: swiperOfElement.getMaxChildSlides(2),
+              },
+              640: {
+                loop: false,
+                slidesPerView: swiperOfElement.getMaxChildSlides(3),
+              },
+              768: {
+                loop: false,
+                slidesPerView: swiperOfElement.getMaxChildSlides(4),
+              },
+            };
+          })(),
         });
       }
     });

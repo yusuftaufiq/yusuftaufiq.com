@@ -10,8 +10,11 @@ import {
   siJquery,
   siLaravel,
   siMysql,
+  siPackagist,
   siPhp,
   siPostgresql,
+  siPostman,
+  siSwagger,
   siTailwindcss,
 } from 'simple-icons/icons';
 
@@ -25,8 +28,11 @@ const icons = [
   siJquery,
   siLaravel,
   siMysql,
+  siPackagist,
   siPhp,
+  siPostman,
   siPostgresql,
+  siSwagger,
   siTailwindcss,
 ];
 

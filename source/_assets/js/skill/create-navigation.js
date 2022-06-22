@@ -1,6 +1,6 @@
 // @ts-check
 
-import getActiveClassesOf from '../modules/active-class';
+import { getActiveClassesOf } from '../global/helpers';
 
 /**
  * @type {import('../contracts/command').default}

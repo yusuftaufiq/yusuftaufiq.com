@@ -7,7 +7,7 @@ import createDarkMode from './home/create-dark-mode';
 import createTypedDescription from './home/create-typed-description';
 import createHorizontalSkillNavigation from './skill/create-horizontal-swiper';
 import createNavigation from './skill/create-navigation';
-import createSimpleIcon from './skill/create-simple-icon';
+import createSimpleIcon from './global/create-simple-icon';
 
 const executeAllCommands = () => {
   [
