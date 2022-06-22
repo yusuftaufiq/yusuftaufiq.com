@@ -14,13 +14,13 @@ const createNavigation = {
       link.addEventListener('click', () => {
         const target = link.getAttribute('data-target');
         const targetTab = document.querySelector(target);
-        const previousActiveTab = document.querySelector('.js-tab-pane.grid');
+        const previousActiveTab = document.querySelector('.js-tab-pane.flex');
 
         document.querySelector(`[data-target="#${previousActiveTab.id}"]`).classList.remove(...activeClasses);
         link.classList.add(...activeClasses);
 
         [previousActiveTab, targetTab].forEach((tab) => {
-          tab.classList.toggle('grid');
+          tab.classList.toggle('flex');
           tab.classList.toggle('hidden');
         });
       });

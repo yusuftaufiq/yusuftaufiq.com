@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import './swipper/navigation.css';
 @import './swipper/themes/dark-and-light.css';
 @import './tippy.js/themes/dark-and-light.css';

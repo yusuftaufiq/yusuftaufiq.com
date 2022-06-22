@@ -24,7 +24,7 @@
         <i class="w-7 h-7 fas fa-sun"></i>
       </x-animated-container>
     </div>
-    <ul class="items-stretch space-y-8 mt-20 md:mt-0 hidden -ml-8 md:ml-auto md:space-y-0 md:space-x-3 md:flex peer-checked:block">
+    <ul class="items-stretch space-y-8 mt-20 mb-8 md:mb-0 md:mt-0 hidden -ml-8 md:ml-auto md:space-y-0 md:space-x-3 md:flex peer-checked:block">
       @foreach ($page->siteSections->keys() as $item)
         <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
           <x-animated-container

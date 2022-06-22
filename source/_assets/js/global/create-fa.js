@@ -2,7 +2,7 @@
 
 import { dom, library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faAngleDoubleDown, faBars, faMoon, faSun,
+  faAngleDoubleDown, faAngleLeft, faAngleRight, faBars, faMoon, faSun,
 } from '@fortawesome/free-solid-svg-icons';
 
 /**
@@ -10,7 +10,7 @@ import {
  */
 const createFa = {
   execute: () => {
-    library.add(faAngleDoubleDown, faBars, faMoon, faSun);
+    library.add(faAngleDoubleDown, faAngleLeft, faAngleRight, faBars, faMoon, faSun);
     dom.watch();
   },
 };

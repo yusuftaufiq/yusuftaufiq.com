@@ -33,13 +33,10 @@
 
 <button {{ $attributes->merge([
   'class' => implode(' ', [
-    'px-8',
-    'py-3',
-    'm-2',
     'text-lg',
     'border-2',
     'font-semibold',
-    'rounded',
+    'rounded-lg',
     'transition',
     'duration-300',
     'hover:-translate-y-1',

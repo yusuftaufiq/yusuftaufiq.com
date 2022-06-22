@@ -12,6 +12,7 @@ const initSwiper = () => new Swiper('.js-swiper', {
   direction: 'vertical',
   slidesPerView: 1,
   spaceBetween: 30,
+  mousewheel: true,
   preventInteractionOnTransition: true,
   pagination: {
     el: '.swiper-pagination',
