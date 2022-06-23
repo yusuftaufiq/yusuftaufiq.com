@@ -21,7 +21,7 @@ return [
             ],
         ],
         'about' => [
-            'image' => 'https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&w=512&h=256&q=80',
+            'image' => 'https://drive.google.com/uc?export=view&id=12KpXGn0SRgDJw5iXxzm4waLExpskR6-4',
             'content' => <<<HTML
                 <span class="js-tippy" data-tippy-content="Who am I?">
                     I am a <b>Software Developer</b> who loves to build software with testable, maintainable, and high-performance code.
