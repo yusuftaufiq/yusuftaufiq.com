@@ -70,7 +70,7 @@ return [
                         'url' => 'https://github.com/yusuftaufiq/laravel-books-api',
                     ],
                     [
-                        'name' => 'Postman Documentation',
+                        'name' => 'Postman Doc.',
                         'icon' => 'postman',
                         'url' => 'https://documenter.getpostman.com/view/14291055/UVyoVcj5',
                     ],
@@ -100,7 +100,7 @@ return [
             ],
             [
                 'title' => 'Personal Portfolio Page',
-                'description' => 'The page you are viewing now.',
+                'description' => 'Modern, responsive, and configurable static personal portfolio page (the page you are viewing now).',
                 'tech_stack' => ['JavaScript', 'Blade', 'Tailwind CSS'],
                 'links' => [
                     [
@@ -109,6 +109,23 @@ return [
                         'url' => 'https://github.com/yusuftaufiq/yusuftaufiq',
                     ],
                 ],
+            ],
+        ],
+        'contacts' => [
+            [
+                'icon' => 'github',
+                'name' => 'GitHub',
+                'link' => 'https://github.com/yusuftaufiq/',
+            ],
+            [
+                'icon' => 'stackoverflow',
+                'name' => 'StackOverflow',
+                'link' => 'https://stackoverflow.com/users/14496736/yusuf-t',
+            ],
+            [
+                'icon' => 'linkedin',
+                'name' => 'LinkedIn',
+                'link' => 'https://www.linkedin.com/in/yusuftaufiq/',
             ],
         ],
     ],
