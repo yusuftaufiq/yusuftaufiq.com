@@ -29,7 +29,7 @@
         <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
           <x-animated-container
             class="js-nav-item {{ $loop->index === 0 ? 'text-cyan-900 font-semibold dark:text-cyan-400 -translate-y-1 scale-110' : '' }}"
-            tag="a" rel="noopener noreferrer" href="#{{ Illuminate\Support\Str::lower($item) }}"
+            tag="a" rel="noopener noreferrer" href="#"
           >
             {{ Illuminate\Support\Str::headline($item) }}
           </x-animated-container>
