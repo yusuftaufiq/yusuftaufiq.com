@@ -3,8 +3,8 @@
 import Swiper, { Navigation } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
-import { swiperOf } from '../global/helpers';
 /* eslint-enable import/no-unresolved */
+import { swiperOf } from '../global/helpers';
 
 /**
  * @type {import('../contracts/command').default}
@@ -20,7 +20,7 @@ const createHorizontalProjectNavigation = {
         prevEl: '.projects-swiper-button-prev',
       },
       breakpoints: {
-        1024: {
+        768: {
           slidesPerView: swiperOf(element).getMaxChildSlides(2),
         },
       },

@@ -9,29 +9,26 @@
     </x-button>
     <div class="swiper js-swiper-projects">
       <div class="swiper-wrapper">
-        @foreach ($page->siteSections->projects->chunk(2) as $projects)
-          <div class="p-1 space-y-2 grid grid-rows-2 swiper-slide">
-            @foreach ($projects as $project)
-              <div class="flex flex-col justify-between row-span-1 rounded-lg border-2 border-gray-800 dark:border-gray-100 px-4 py-2">
-                <div class="flex flex-col">
-                  <h3 class="text-xl font-semibold">{{ $project->title }}</h3>
-                  <p class="text-lg text-justify">{{ $project->description }}</p>
-                  <p class="text-lg text-justify">
-                    @foreach ($project->tech_stack as $tech)
-                      <span>{{ $tech }}</span> {{ $loop->last === false ? ' • ' : '' }}
-                    @endforeach
-                  </p>
-                </div>
-                <p class="text-lg mt-2">
-                  @foreach ($project->links as $link)
-                    <x-animated-container tag="a" href="{{ $link->url }}" class="mx-1">
-                      <i class="align-middle inline-block si si-{{ $link->icon }} h-5 w-5"></i>&nbsp;{{ $link->name }}
-                    </x-animated-container>
-                    {{ $loop->last === false ? ' • ' : '' }}
+        @foreach ($page->siteSections->projects as $project)
+          <div class="p-1 space-y-2 swiper-slide !h-auto">
+            <div class="flex flex-col justify-between h-full rounded-lg border-2 border-gray-800 dark:border-gray-100 px-4 py-2">
+              <div class="flex flex-col">
+                <h3 class="text-xl font-semibold">{{ $project->title }}</h3>
+                <p class="text-lg text-justify">{{ $project->description }}</p>
+                <p class="text-lg text-justify">
+                  @foreach ($project->tech_stack as $tech)
+                    <span>{{ $tech }}</span> {{ $loop->last === false ? ' • ' : '' }}
                   @endforeach
                 </p>
               </div>
-            @endforeach
+              <p class="text-lg mt-2 flex flex-row flex-wrap">
+                @foreach ($project->links as $link)
+                  <x-animated-container tag="a" href="{{ $link->url }}" class="mx-1">
+                    <i class="align-middle inline-block si si-{{ $link->icon }} h-5 w-5"></i>&nbsp;{{ $link->name }}
+                  </x-animated-container>
+                @endforeach
+              </p>
+            </div>
           </div>
         @endforeach
       </div>
