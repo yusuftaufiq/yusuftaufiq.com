@@ -3,8 +3,8 @@
 import Swiper, { Autoplay, Navigation } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
-import { swiperOf } from '../global/helpers';
 /* eslint-enable import/no-unresolved */
+import { swiperOf } from '../global/helpers';
 
 /**
  * @type {import('../contracts/command').default}

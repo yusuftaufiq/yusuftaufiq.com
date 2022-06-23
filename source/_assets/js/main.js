@@ -1,26 +1,26 @@
 // @ts-check
 
 import createFa from './global/create-fa';
+import createSimpleIcon from './global/create-simple-icon';
 import createSwiper from './global/create-swiper';
 import createTippy from './global/create-tippy';
 import createDarkMode from './home/create-dark-mode';
 import createTypedDescription from './home/create-typed-description';
-import createHorizontalSkillNavigation from './skill/create-horizontal-swiper';
-import createNavigation from './skill/create-navigation';
-import createHorizontalProjectNavigation from './project/create-horizontal-swiper';
-import createSimpleIcon from './global/create-simple-icon';
+import createHorizontalProjectNavigation from './projects/create-horizontal-swiper';
+import createHorizontalSkillNavigation from './skills/create-horizontal-swiper';
+import createNavigation from './skills/create-navigation';
 
 const executeAllCommands = () => {
   [
     createFa,
+    createSimpleIcon,
     createSwiper,
     createTippy,
     createDarkMode,
     createTypedDescription,
+    createHorizontalProjectNavigation,
     createHorizontalSkillNavigation,
     createNavigation,
-    createSimpleIcon,
-    createHorizontalProjectNavigation,
   ].forEach((command) => {
     command.execute();
   });

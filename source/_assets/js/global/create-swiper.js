@@ -1,11 +1,11 @@
 // @ts-check
 
 import Swiper, { Mousewheel, Navigation, Pagination } from 'swiper';
-import { getActiveClassesOf } from './helpers';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
 import 'swiper/css/pagination';
 /* eslint-enable import/no-unresolved */
+import { getActiveClassesOf } from './helpers';
 
 /**
  * @type {import('../contracts/command').default}
