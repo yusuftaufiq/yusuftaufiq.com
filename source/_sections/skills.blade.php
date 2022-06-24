@@ -6,7 +6,7 @@
   <div class="my-2 grid grid-cols-7">
     <div class="flex justify-center col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
       @foreach ($page->siteSections->skills->keys() as $category)
-        <button class="p-2 m-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-100 dark:text-gray-100">
+        <button aria-label="Switch to {{ $category }} tab" class="p-2 m-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-100 dark:text-gray-100">
           <x-animated-container
             tag="span"
             data-target="#js-tab-{{ $category }}"
@@ -18,7 +18,7 @@
     </div>
     @foreach ($page->siteSections->skills as $category => $skills)
       <div id="js-tab-{{ $category }}" class="{{ $loop->index === 0 ? 'flex' : 'hidden' }} col-span-full md:col-span-6 js-tab-pane w-full h-full flex-row items-center">
-        <x-button data-tippy-content="See previous skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-prev">
+        <x-button aria-label="See previous skills" data-tippy-content="See previous skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-prev">
           <i class="h-4 w-6 fas fas fa-angle-left"></i>
         </x-button>
         <div class="swiper js-swiper-skills" data-category="{{ $category }}">
@@ -37,7 +37,7 @@
             @endforeach
           </div>
         </div>
-        <x-button data-tippy-content="See next skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-next">
+        <x-button aria-label="See next skills" data-tippy-content="See next skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-next">
           <i class="h-4 w-6 fas fas fa-angle-right"></i>
         </x-button>
       </div>
