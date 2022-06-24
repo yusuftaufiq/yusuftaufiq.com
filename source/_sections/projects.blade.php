@@ -11,7 +11,7 @@
       <div class="swiper-wrapper">
         @foreach ($page->siteSections->projects as $project)
           <div class="p-1 space-y-2 swiper-slide !h-auto">
-            <div class="flex flex-col justify-between h-full rounded-lg border-2 border-gray-800 dark:border-gray-100 px-4 py-2">
+            <div class="flex flex-col justify-between h-full rounded-lg border-2 border-primary-800 dark:border-primary-100 px-4 py-2">
               <div class="flex flex-col">
                 <h3 class="text-xl font-semibold">{{ $project->title }}</h3>
                 <p class="text-lg text-justify">{{ $project->description }}</p>

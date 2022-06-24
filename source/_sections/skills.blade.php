@@ -6,11 +6,11 @@
   <div class="my-2 grid grid-cols-7">
     <div class="flex justify-center col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start">
       @foreach ($page->siteSections->skills->keys() as $category)
-        <button class="p-2 m-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-100 dark:text-gray-100">
+        <button class="p-2 m-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-primary-100 dark:text-primary-100">
           <x-animated-container
             tag="span"
             data-target="#js-tab-{{ $category }}"
-            class="text-base js-nav-link {{ $loop->index === 0 ? 'font-semibold text-cyan-900 -translate-y-1 scale-110 dark:text-cyan-400' : '' }}">
+            class="text-base js-nav-link {{ $loop->index === 0 ? 'font-semibold text-secondary-900 -translate-y-1 scale-110 dark:text-secondary-50' : '' }}">
             {{ \Illuminate\Support\Str::headline($category) }}
           </x-animated-container>
         </button>
@@ -27,7 +27,7 @@
               <div class="swiper-slide flex flex-col space-y-3">
                 @foreach ($skills as $skill)
                   <div class="flex flex-col items-center mx-2">
-                    <div class="rounded-lg border-2 border-gray-800 dark:border-gray-100 p-2 w-28 h-28">
+                    <div class="rounded-lg border-2 border-primary-800 dark:border-primary-100 p-2 w-28 h-28">
                       <i class="si si-{{ $skill->icon }}"></i>
                     </div>
                     <h3 class="text-center text-base font-semibold">{{ $skill->name }}</h3>
