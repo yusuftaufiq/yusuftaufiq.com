@@ -4,6 +4,7 @@ import createFa from './global/create-fa';
 import createSimpleIcons from './global/create-simple-icons';
 import createSwiper from './global/create-swiper';
 import createTippy from './global/create-tippy';
+import removeLoadingScreen from './global/remove-loading-screen';
 import createDarkMode from './home/create-dark-mode';
 import createTypedDescription from './home/create-typed-description';
 import createHorizontalProjectNavigation from './projects/create-horizontal-swiper';
@@ -16,6 +17,7 @@ const executeAllCommands = () => {
     createSimpleIcons,
     createSwiper,
     createTippy,
+    removeLoadingScreen,
     createDarkMode,
     createTypedDescription,
     createHorizontalProjectNavigation,
