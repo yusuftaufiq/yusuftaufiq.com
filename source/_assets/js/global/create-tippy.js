@@ -1,6 +1,6 @@
 // @ts-check
 
-import tippy from 'tippy.js';
+import tippy, { delegate } from 'tippy.js';
 import 'tippy.js/animations/shift-away.css';
 import 'tippy.js/dist/tippy.css';
 
@@ -12,6 +12,10 @@ const createTippy = {
     tippy('.js-tippy', {
       animation: 'shift-away',
       theme: 'dark-and-light',
+    });
+
+    delegate('.js-tippy', {
+      target: 'body',
     });
   },
 };

@@ -61,6 +61,7 @@ const createSimpleIcon = {
         iconNode.innerHTML = icon.svg;
         iconNode.classList.add('svg-inline--si', `si-${icon.slug}`);
         iconNode.querySelector('path').setAttribute('fill', 'currentColor');
+        iconNode.querySelector('title').remove();
 
         attributes.forEach((attribute) => {
           iconNode.setAttribute(attribute.key, attribute.value);

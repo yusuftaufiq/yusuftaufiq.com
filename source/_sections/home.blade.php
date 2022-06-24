@@ -17,7 +17,7 @@
   </p>
 
   <div class="flex flex-wrap justify-center align-center">
-    <x-button type="primary" class="js-introducing-myself js-skip-typed-animation px-8 py-3 m-2">Skip Animation</x-button>
+    <x-button aria-label="Skip animation" type="primary" class="js-introducing-myself js-skip-typed-animation px-8 py-3 m-2">Skip Animation</x-button>
     <x-animated-container class="hidden js-finished-introducing-myself js-swiper-button-next group cursor-pointer">
       <i class="animate-bounce group-hover:animate-none fas fa-angle-double-down h-6 w-6"></i>
     </x-animated-container>

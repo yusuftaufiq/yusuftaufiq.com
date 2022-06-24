@@ -36,7 +36,7 @@
         </li>
       @endforeach
     </ul>
-    <x-animated-container tag="label" for="hbr" class="
+    <x-animated-container tag="label" aria-label="Toggle show hide navigation" for="hbr" class="
       md:hidden inline p-4 cursor-pointer h-fit
       peer-checked:text-stone-900
       dark:peer-checked:text-stone-50

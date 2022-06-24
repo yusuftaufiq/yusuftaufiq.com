@@ -18,7 +18,7 @@
     </div>
     @foreach ($page->siteSections->skills as $category => $skills)
       <div id="js-tab-{{ $category }}" class="{{ $loop->index === 0 ? 'flex' : 'hidden' }} col-span-full md:col-span-6 js-tab-pane w-full h-full flex-row items-center">
-        <x-button type="primary" class="{{ $category }}-swiper-button-prev">
+        <x-button data-tippy-content="See previous skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-prev">
           <i class="h-4 w-6 fas fas fa-angle-left"></i>
         </x-button>
         <div class="swiper js-swiper-skills" data-category="{{ $category }}">
@@ -27,7 +27,7 @@
               <div class="swiper-slide flex flex-col space-y-3">
                 @foreach ($skills as $skill)
                   <div class="flex flex-col items-center mx-2">
-                    <div class="rounded-lg border-2 border-gray-800 dark:border-gray-100 p-2 w-28 h-28">
+                    <div class="js-tippy rounded-lg border-2 border-gray-800 dark:border-gray-100 p-2 w-28 h-28" data-tippy-content="{{ $skill->name }}">
                       <i class="si si-{{ $skill->icon }}"></i>
                     </div>
                     <h3 class="text-center text-base font-semibold">{{ $skill->name }}</h3>
@@ -37,7 +37,7 @@
             @endforeach
           </div>
         </div>
-        <x-button type="primary" class="{{ $category }}-swiper-button-next">
+        <x-button data-tippy-content="See next skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-next">
           <i class="h-4 w-6 fas fas fa-angle-right"></i>
         </x-button>
       </div>

@@ -4,7 +4,7 @@
     <p class="text-lg text-center">Here are the best projects I've ever worked on.</p>
   </div>
   <div class="w-full flex flex-row items-center">
-    <x-button type="primary" class="projects-swiper-button-prev">
+    <x-button data-tippy-content="See previous projects" aria-label="See previous projects" type="primary" class="js-tippy projects-swiper-button-prev">
       <i class="h-4 w-6 fas fas fa-angle-left"></i>
     </x-button>
     <div class="swiper js-swiper-projects">
@@ -29,7 +29,7 @@
         @endforeach
       </div>
     </div>
-    <x-button type="primary" class="projects-swiper-button-next">
+    <x-button data-tippy-content="See next projects" aria-label="See next projects" type="primary" class="js-tippy projects-swiper-button-next">
       <i class="h-4 w-6 fas fas fa-angle-right"></i>
     </x-button>
   </div>
