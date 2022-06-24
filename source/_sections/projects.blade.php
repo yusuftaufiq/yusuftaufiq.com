@@ -15,7 +15,7 @@
               <div class="flex flex-col">
                 <h3 class="text-xl font-semibold">{{ $project->title }}</h3>
                 <p class="text-lg text-justify">{{ $project->description }}</p>
-                <p class="text-lg text-justify">{{ $project->tech_stack->implode(' • ') }}</p>
+                <p class="text-lg text-justify">{{ $project->stacks->implode(' • ') }}</p>
               </div>
               <p class="text-lg mt-2 flex flex-row flex-wrap">
                 @foreach ($project->links as $link)

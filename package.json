@@ -1,37 +1,37 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "staging": "NODE_ENV=staging mix",
-        "prod": "mix --production"
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.28.0",
-        "@typescript-eslint/parser": "^5.28.0",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^8.18.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.26.0"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^6.1.1",
-        "@fortawesome/free-brands-svg-icons": "^6.1.1",
-        "@fortawesome/free-regular-svg-icons": "^6.1.1",
-        "@fortawesome/free-solid-svg-icons": "^6.1.1",
-        "laravel-mix": "^6.0.49",
-        "laravel-mix-jigsaw": "^1.5.0",
-        "postcss": "^8.4.14",
-        "postcss-import": "^14.1.0",
-        "simple-icons": "^7.1.0",
-        "swiper": "^8.2.4",
-        "tailwindcss": "^3.1.3",
-        "tippy.js": "^6.3.7",
-        "typed.js": "^2.0.12"
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "staging": "NODE_ENV=staging mix",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "laravel-mix": "^6.0.49",
+    "laravel-mix-jigsaw": "^1.5.0",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "simple-icons": "^7.1.0",
+    "swiper": "^8.2.4",
+    "tailwindcss": "^3.1.3",
+    "tippy.js": "^6.3.7",
+    "typed.js": "^2.0.12"
+  }
 }

@@ -1,7 +1,7 @@
 // @ts-check
 
 import createFa from './global/create-fa';
-import createSimpleIcon from './global/create-simple-icons';
+import createSimpleIcons from './global/create-simple-icons';
 import createSwiper from './global/create-swiper';
 import createTippy from './global/create-tippy';
 import createDarkMode from './home/create-dark-mode';
@@ -13,7 +13,7 @@ import createNavigation from './skills/create-navigation';
 const executeAllCommands = () => {
   [
     createFa,
-    createSimpleIcon,
+    createSimpleIcons,
     createSwiper,
     createTippy,
     createDarkMode,

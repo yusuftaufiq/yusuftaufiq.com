@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * If you want to add another icon, you need to modify ./source/_assets/js/global/create-simple-icons.js
+ *
+ * @see https://simpleicons.org/ for a list of all available icons.
+ */
+
 return [
     'production' => false,
     'baseUrl' => 'http://localhost:3000',
@@ -12,6 +18,12 @@ return [
         'home' => [
             'descriptions' => [
                 'Hi, there!',
+                /**
+                 * You must have 1 value that has class "js-typed-important".
+                 *
+                 * An array value having this class will be displayed immediately
+                 * when the animation in the typed description is skipped.
+                 */
                 <<<HTML
                     <span class="js-typed-important">My name is Yusuf Taufiqurrahman</span>
                 HTML,
@@ -35,9 +47,7 @@ return [
             HTML,
         ],
         /**
-         * If you want to add another icon, you need to modify ./source/_assets/js/skill/create-simple-icon.js
-         *
-         * @see https://simpleicons.org/ for a list of all available icons.
+         * Apart from proficient and familiar categories, you can also add other new categories.
          */
         'skills' => [
             'proficient' => [
@@ -62,7 +72,7 @@ return [
             [
                 'title' => 'Laravel Books API',
                 'description' => 'An application to scrape data and provide results in a RESTful API format.',
-                'tech_stack' => ['PHP', 'Laravel'],
+                'stacks' => ['PHP', 'Laravel'],
                 'links' => [
                     [
                         'name' => 'GitHub',
@@ -79,7 +89,7 @@ return [
             [
                 'title' => 'CodeIgniter 3 IDE Helper',
                 'description' => 'CLI application to generate IDE helper for CodeIgniter 3.',
-                'tech_stack' => ['PHP', 'Docker', 'CI/CD (GitHub Actions)'],
+                'stacks' => ['PHP', 'Docker', 'CI/CD (GitHub Actions)'],
                 'links' => [
                     [
                         'name' => 'GitHub',
@@ -101,7 +111,7 @@ return [
             [
                 'title' => 'Personal Portfolio Page',
                 'description' => 'Modern, responsive, and configurable static personal portfolio page (the page you are viewing now).',
-                'tech_stack' => ['JavaScript', 'Blade', 'Tailwind CSS'],
+                'stacks' => ['JavaScript', 'Blade', 'Tailwind CSS'],
                 'links' => [
                     [
                         'name' => 'GitHub',
@@ -115,17 +125,17 @@ return [
             [
                 'icon' => 'github',
                 'name' => 'GitHub',
-                'link' => 'https://github.com/yusuftaufiq/',
+                'url' => 'https://github.com/yusuftaufiq/',
             ],
             [
                 'icon' => 'stackoverflow',
-                'name' => 'StackOverflow',
-                'link' => 'https://stackoverflow.com/users/14496736/yusuf-t',
+                'name' => 'Stack Overflow',
+                'url' => 'https://stackoverflow.com/users/14496736/yusuf-t',
             ],
             [
                 'icon' => 'linkedin',
                 'name' => 'LinkedIn',
-                'link' => 'https://www.linkedin.com/in/yusuftaufiq/',
+                'url' => 'https://www.linkedin.com/in/yusuftaufiq/',
             ],
         ],
     ],
