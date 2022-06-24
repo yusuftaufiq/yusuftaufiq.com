@@ -21,7 +21,7 @@
   <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </head>
 
-<body class="overflow-hidden h-full bg-primary-100 text-primary-800 leading-normal font-sans antialiased relative m-0 p-0 dark:bg-primary-800 dark:text-primary-100">
+<body class="overflow-hidden h-full bg-gray-100 text-gray-800 leading-normal font-sans antialiased relative m-0 p-0 dark:bg-gray-800 dark:text-gray-100">
   <div class="js-swiper h-full w-full">
     @include('_partials.header')
     <div class="swiper-wrapper">
