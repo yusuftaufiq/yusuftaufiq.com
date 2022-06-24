@@ -15,11 +15,7 @@
               <div class="flex flex-col">
                 <h3 class="text-xl font-semibold">{{ $project->title }}</h3>
                 <p class="text-lg text-justify">{{ $project->description }}</p>
-                <p class="text-lg text-justify">
-                  @foreach ($project->tech_stack as $tech)
-                    <span>{{ $tech }}</span> {{ $loop->last === false ? ' • ' : '' }}
-                  @endforeach
-                </p>
+                <p class="text-lg text-justify">{{ $project->tech_stack->implode(' • ') }}</p>
               </div>
               <p class="text-lg mt-2 flex flex-row flex-wrap">
                 @foreach ($project->links as $link)
