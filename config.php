@@ -110,13 +110,13 @@ return [
             ],
             [
                 'title' => 'Personal Portfolio Page',
-                'description' => 'Modern, responsive, and configurable static personal portfolio page (the page you are viewing now).',
+                'description' => 'The page you are viewing now.',
                 'stacks' => ['JavaScript', 'Blade', 'Tailwind CSS'],
                 'links' => [
                     [
                         'name' => 'GitHub',
                         'icon' => 'github',
-                        'url' => 'https://github.com/yusuftaufiq/yusuftaufiq',
+                        'url' => 'https://github.com/yusuftaufiq/yusuftaufiq.com',
                     ],
                 ],
             ],
