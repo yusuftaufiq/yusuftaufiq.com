@@ -37,7 +37,7 @@ To replace all the content on the site, you can modify the [`config.php`](./conf
 
 Since the end result of this application is static HTML, CSS, and JavaScript. So, you can use a free service for hosting static sites like Github Pages or Netlify. See [here](https://jigsaw.tighten.com/docs/deploying-your-site/) for more documentation.
 
-## Libraries
+## Technologies Used
 
 - Static site generator: [Jigsaw](https://jigsaw.tighten.com/)
 - Frontend framework: [Tailwind CSS](https://tailwindcss.com/)
