@@ -1,4 +1,4 @@
-<header class="p-1 md:p-2 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-gray-400">
+<header class="p-1 md:p-2 w-full z-20 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-gray-400">
   <nav class="navbar container flex justify-between mx-auto min-w-full">
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
     <div class="p-4 h-fit flex justify-start space-x-3">
@@ -36,13 +36,13 @@
         </li>
       @endforeach
     </ul>
-    <x-animated-container tag="label" aria-label="Toggle show hide navigation" for="hbr" class="
-      md:hidden inline p-4 cursor-pointer h-fit
-      peer-checked:text-stone-900
-      dark:peer-checked:text-stone-50
-      peer-checked:-translate-y-1
-      peer-checked:scale-110
-    ">
+    <x-animated-container
+      tag="label"
+      data-tippy-content="Toggle show hide navigation"
+      data-tippy-placement="left"
+      aria-label="Toggle show hide navigation"
+      for="hbr"
+      class="js-tippy md:hidden inline p-4 cursor-pointer h-fit peer-checked:text-stone-900 dark:peer-checked:text-stone-50 peer-checked:-translate-y-1 peer-checked:scale-110">
       <i class="fas fa-bars w-6 h-6"></i>
     </x-animated-container>
   </nav>

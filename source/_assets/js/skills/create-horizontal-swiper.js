@@ -3,6 +3,7 @@
 import Swiper, { Autoplay, Navigation } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
+import { hideAll } from 'tippy.js';
 /* eslint-enable import/no-unresolved */
 import { swiperOf } from '../global/helpers';
 
@@ -44,6 +45,14 @@ const createHorizontalSkillNavigation = {
               },
             };
           })(),
+        });
+
+        swiper.on('reachBeginning', () => {
+          hideAll();
+        });
+
+        swiper.on('reachEnd', () => {
+          hideAll();
         });
       }
     });

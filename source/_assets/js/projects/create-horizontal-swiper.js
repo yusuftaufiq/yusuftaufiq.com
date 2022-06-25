@@ -3,6 +3,7 @@
 import Swiper, { Navigation } from 'swiper';
 /* eslint-disable import/no-unresolved */
 import 'swiper/css';
+import { hideAll } from 'tippy.js';
 /* eslint-enable import/no-unresolved */
 import { swiperOf } from '../global/helpers';
 
@@ -24,6 +25,14 @@ const createHorizontalProjectNavigation = {
           slidesPerView: swiperOf(element).getMaxChildSlides(2),
         },
       },
+    });
+
+    swiper.on('reachBeginning', () => {
+      hideAll();
+    });
+
+    swiper.on('reachEnd', () => {
+      hideAll();
     });
   },
 };
