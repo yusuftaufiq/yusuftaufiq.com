@@ -4,9 +4,11 @@
     <p class="text-lg text-center">Here are the best projects I've ever worked on.</p>
   </div>
   <div class="w-full flex flex-row items-center">
-    <x-button data-tippy-content="See previous projects" aria-label="See previous projects" type="primary" class="js-tippy projects-swiper-button-prev">
-      <i class="h-4 w-6 fas fas fa-angle-left"></i>
-    </x-button>
+    <div class="min-w-[1.75rem]">
+      <x-button data-tippy-content="See previous projects" aria-label="See previous projects" type="primary" class="js-tippy projects-swiper-button-prev rounded-md w-full">
+        <i class="fas fas fa-angle-left"></i>
+      </x-button>
+    </div>
     <div class="swiper js-swiper-projects">
       <div class="swiper-wrapper">
         @foreach ($page->siteSections->projects as $project)
@@ -29,8 +31,9 @@
         @endforeach
       </div>
     </div>
-    <x-button data-tippy-content="See next projects" aria-label="See next projects" type="primary" class="js-tippy projects-swiper-button-next">
-      <i class="h-4 w-6 fas fas fa-angle-right"></i>
-    </x-button>
+    <div class="min-w-[1.75rem]">
+      <x-button data-tippy-content="See next projects" aria-label="See next projects" type="primary" class="js-tippy projects-swiper-button-next rounded-md w-full">
+        <i class="fas fas fa-angle-right"></i>
+      </x-button>
   </div>
 </x-section>

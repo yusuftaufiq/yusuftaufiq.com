@@ -9,6 +9,10 @@ import 'tippy.js/dist/tippy.css';
  */
 const createTippy = {
   execute: () => {
+    if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) === true) {
+      return;
+    }
+
     tippy('.js-tippy', {
       animation: 'shift-away',
       theme: 'dark-and-light',

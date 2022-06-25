@@ -18,9 +18,11 @@
     </div>
     @foreach ($page->siteSections->skills as $category => $skills)
       <div id="js-tab-{{ $category }}" class="{{ $loop->index === 0 ? 'flex' : 'hidden' }} col-span-full md:col-span-6 js-tab-pane w-full h-full flex-row items-center">
-        <x-button aria-label="See previous skills" data-tippy-content="See previous skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-prev">
-          <i class="h-4 w-6 fas fas fa-angle-left"></i>
-        </x-button>
+        <div class="min-w-[1.75rem] min-h-[2.5rem]">
+          <x-button aria-label="See previous skills" data-tippy-content="See previous skills" type="primary" class="js-tippy {{ $category }}-swiper-button-prev rounded-md w-full">
+            <i class="fas fas fa-angle-left"></i>
+          </x-button>
+        </div>
         <div class="swiper js-swiper-skills" data-category="{{ $category }}">
           <div class="swiper-wrapper">
             @foreach ($skills->chunk(2) as $skills)
@@ -37,9 +39,11 @@
             @endforeach
           </div>
         </div>
-        <x-button aria-label="See next skills" data-tippy-content="See next skills" type="primary" class=" js-tippy {{ $category }}-swiper-button-next">
-          <i class="h-4 w-6 fas fas fa-angle-right"></i>
-        </x-button>
+        <div class="min-w-[1.75rem]">
+          <x-button aria-label="See next skills" data-tippy-content="See next skills" type="primary" class="js-tippy {{ $category }}-swiper-button-next rounded-md w-full">
+            <i class="fas fas fa-angle-right"></i>
+          </x-button>
+        </div>
       </div>
     @endforeach
   </div>
