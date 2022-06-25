@@ -1,4 +1,4 @@
-<header class="p-1 md:p-2 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-stone-50">
+<header class="p-1 md:p-2 w-full z-10 fixed bg-gray-100 dark:bg-gray-800 border-b-2 dark:border-gray-400">
   <nav class="navbar container flex justify-between mx-auto min-w-full">
     <input autocomplete="off" type="checkbox" name="hbr" id="hbr" class="hidden peer" aria-hidden="true" />
     <div class="p-4 h-fit flex justify-start space-x-3">
@@ -26,7 +26,7 @@
     </div>
     <ul class="items-stretch space-y-8 mt-20 mb-8 md:mb-0 md:mt-0 hidden -ml-8 md:ml-auto md:space-y-0 md:space-x-3 md:flex peer-checked:block">
       @foreach ($page->siteSections->keys() as $item)
-        <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-100">
+        <li class="flex items-center place-content-center pb-2 md:pb-0 px-4 border-b-2 dark:border-gray-400">
           <x-animated-container
             class="js-nav-item {{ $loop->index === 0 ? 'text-stone-900 font-semibold dark:text-stone-50 -translate-y-1 scale-110' : '' }}"
             tag="a" rel="noopener noreferrer" href="#"
