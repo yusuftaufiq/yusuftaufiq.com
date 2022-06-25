@@ -40,8 +40,8 @@ Since the end result of this application is static HTML, CSS, and JavaScript. So
 ## Libraries
 
 - Static site generator: [Jigsaw](https://jigsaw.tighten.com/)
-- Frontend framework: [Tailwind CSS](tailwindcss.com/)
-- Icons: [Font Awesome](https://fontawesome.com/), [Simple Icons](simpleicons.org/)
+- Frontend framework: [Tailwind CSS](https://tailwindcss.com/)
+- Icons: [Font Awesome](https://fontawesome.com/), [Simple Icons](https://simpleicons.org/)
 - Animations: [Swiper.js](https://swiperjs.com/), [Typed.js](https://mattboldt.com/demos/typed-js/), [Tippy.js](https://atomiks.github.io/tippyjs/)
 
 ## Credits
