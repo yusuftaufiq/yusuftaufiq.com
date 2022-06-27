@@ -1,6 +1,6 @@
 <x-section>
   <div class="my-2 flex flex-col space-y-4 text-center">
-    <h2 class="text-2xl font-bold leading-none sm:text-4xl">Contacts</h2>
+    <x-section.title>Contacts</x-section.title>
     <p class="text-lg text-center">Want to reach me on another site?</p>
   </div>
   <div class="grid grid-flow-col justify-center">

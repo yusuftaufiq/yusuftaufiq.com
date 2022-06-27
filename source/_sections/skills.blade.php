@@ -1,7 +1,7 @@
 <x-section class="text-center">
   <div class="my-2 flex flex-col space-y-4 text-center">
-    <h2 class="text-2xl font-bold leading-none sm:text-4xl">Skills</h2>
-    <p class="text-lg text-center">You can also switch tabs from <b>proficient</b> to <b>familiar</b> if you want to know what other skills I have.</p>
+    <x-section.title>Skills</x-section.title>
+    <p class="text-lg text-center">You can also switch tabs from <b>intermediate</b> to <b>basic</b> if you want to know what other skills I have.</p>
   </div>
   <div class="my-2 grid grid-cols-7">
     <div class="flex justify-center col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start mb-2">
@@ -18,11 +18,7 @@
     </div>
     @foreach ($page->siteSections->skills as $category => $skills)
       <div id="js-tab-{{ $category }}" class="{{ $loop->index === 0 ? 'flex' : 'hidden' }} col-span-full md:col-span-6 js-tab-pane w-full h-full flex-row items-center">
-        <div class="min-w-[1.75rem] min-h-[2.5rem]">
-          <x-button aria-label="See previous skills" data-tippy-content="See previous skills" type="primary" class="js-tippy {{ $category }}-swiper-button-prev rounded-md w-full">
-            <i class="fas fas fa-angle-left"></i>
-          </x-button>
-        </div>
+        <x-swiper.horizontal-nav type="previous" label="See previous skills" class="{{ $category }}-swiper-button-prev"/>
         <div class="swiper js-swiper-skills" data-category="{{ $category }}">
           <div class="swiper-wrapper">
             @foreach ($skills->chunk(2) as $skills)
@@ -39,11 +35,7 @@
             @endforeach
           </div>
         </div>
-        <div class="min-w-[1.75rem]">
-          <x-button aria-label="See next skills" data-tippy-content="See next skills" type="primary" class="js-tippy {{ $category }}-swiper-button-next rounded-md w-full">
-            <i class="fas fas fa-angle-right"></i>
-          </x-button>
-        </div>
+        <x-swiper.horizontal-nav type="next" label="See next skills" class="{{ $category }}-swiper-button-next"/>
       </div>
     @endforeach
   </div>

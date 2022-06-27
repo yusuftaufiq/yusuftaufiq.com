@@ -1,14 +1,10 @@
 <x-section>
   <div class="my-2 flex flex-col space-y-4 text-center">
-    <h2 class="text-2xl font-bold leading-none sm:text-4xl">Projects</h2>
+    <x-section.title>Projects</x-section.title>
     <p class="text-lg text-center">Here are the best projects I've ever worked on.</p>
   </div>
   <div class="w-full flex flex-row items-center">
-    <div class="min-w-[1.75rem]">
-      <x-button data-tippy-content="See previous projects" aria-label="See previous projects" type="primary" class="js-tippy projects-swiper-button-prev rounded-md w-full">
-        <i class="fas fas fa-angle-left"></i>
-      </x-button>
-    </div>
+    <x-swiper.horizontal-nav type="previous" label="See previous projects" class="projects-swiper-button-prev"/>
     <div class="swiper js-swiper-projects">
       <div class="swiper-wrapper">
         @foreach ($page->siteSections->projects as $project)
@@ -31,9 +27,6 @@
         @endforeach
       </div>
     </div>
-    <div class="min-w-[1.75rem]">
-      <x-button data-tippy-content="See next projects" aria-label="See next projects" type="primary" class="js-tippy projects-swiper-button-next rounded-md w-full">
-        <i class="fas fas fa-angle-right"></i>
-      </x-button>
+    <x-swiper.horizontal-nav type="next" label="See next projects" class="projects-swiper-button-next"/>
   </div>
 </x-section>
