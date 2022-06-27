@@ -47,10 +47,10 @@ return [
             HTML,
         ],
         /**
-         * Apart from proficient and familiar categories, you can also add other new categories.
+         * Apart from intermediate and basic categories, you can also add other new categories.
          */
         'skills' => [
-            'proficient' => [
+            'intermediate' => [
                 ['name' => 'PHP', 'icon' => 'php'],
                 ['name' => 'Laravel', 'icon' => 'laravel'],
                 ['name' => 'CodeIgniter', 'icon' => 'codeigniter'],
@@ -60,7 +60,7 @@ return [
                 ['name' => 'JavaScript', 'icon' => 'javascript'],
                 ['name' => 'jQuery', 'icon' => 'jquery'],
             ],
-            'familiar' => [
+            'basic' => [
                 ['name' => 'Git', 'icon' => 'git'],
                 ['name' => 'GitHub Actions', 'icon' => 'github'],
                 ['name' => 'Tailwind', 'icon' => 'tailwindcss'],
