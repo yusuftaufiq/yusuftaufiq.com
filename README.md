@@ -5,7 +5,7 @@
     <img alt="Netlify" src="https://img.shields.io/netlify/74f34fc6-5e3a-4ee7-876a-991734094867?color=white&label=netlify%20build&logo=netlify">
   </a>
   <a href="https://github.com/yusuftaufiq/yusuftaufiq.com/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/yusuftaufiq/yusuftaufiq.com?color=lightgrey">
+    <img alt="License" src="https://img.shields.io/github/license/yusuftaufiq/yusuftaufiq?color=lightgrey">
   </a>
   <a href="https://yusuftaufiq.com">
     <img alt="Website" src="https://img.shields.io/website?down_message=offline&up_color=white&up_message=online&url=https%3A%2F%2Fyusuftaufiq.com">
