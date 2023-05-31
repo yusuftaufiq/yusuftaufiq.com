@@ -9,7 +9,6 @@ import createDarkMode from './home/create-dark-mode';
 import createTypedDescription from './home/create-typed-description';
 import createHorizontalProjectNavigation from './projects/create-horizontal-swiper';
 import createHorizontalSkillNavigation from './skills/create-horizontal-swiper';
-import createNavigation from './skills/create-navigation';
 
 const executeAllCommands = () => {
   [
@@ -22,7 +21,6 @@ const executeAllCommands = () => {
     createTypedDescription,
     createHorizontalProjectNavigation,
     createHorizontalSkillNavigation,
-    createNavigation,
   ].forEach((command) => {
     command.execute();
   });

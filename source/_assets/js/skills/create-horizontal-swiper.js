@@ -16,14 +16,10 @@ const createHorizontalSkillNavigation = {
       if (element instanceof HTMLElement) {
         const swiper = new Swiper(element, {
           modules: [Autoplay, Navigation],
-          navigation: (() => {
-            const category = element.getAttribute('data-category');
-
-            return {
-              nextEl: `.${category}-swiper-button-next`,
-              prevEl: `.${category}-swiper-button-prev`,
-            };
-          })(),
+          navigation: {
+            nextEl: '.skills-swiper-button-next',
+            prevEl: '.skills-swiper-button-prev',
+          },
           autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -37,11 +33,11 @@ const createHorizontalSkillNavigation = {
               },
               640: {
                 loop: false,
-                slidesPerView: swiperOfElement.getMaxChildSlides(3),
+                slidesPerView: swiperOfElement.getMaxChildSlides(4),
               },
               768: {
                 loop: false,
-                slidesPerView: swiperOfElement.getMaxChildSlides(4),
+                slidesPerView: swiperOfElement.getMaxChildSlides(5),
               },
             };
           })(),
