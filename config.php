@@ -25,10 +25,10 @@ return [
                  * when the animation in the typed description is skipped.
                  */
                 <<<HTML
-                    <span class="js-typed-important">My name is Yusuf Taufiqurrahman</span>
+                    <span class="js-typed-important">I'm Yusuf Taufiqurrahman</span>
                 HTML,
-                'I am a Software Developer',
-                'I am a Tech Enthusiast',
+                'A Software Developer',
+                'And Tech Enthusiast',
                 'Keep scrolling to know more about me!',
             ],
         ],
@@ -36,42 +36,65 @@ return [
             'image' => 'https://drive.google.com/uc?export=view&id=12KpXGn0SRgDJw5iXxzm4waLExpskR6-4',
             'content' => <<<HTML
                 <span class="js-tippy" data-tippy-content="Who am I?">
-                    I am a <b>Software Developer</b> who loves to build software with testable, maintainable, and high-performance code.
+                    <b>Software Developer</b> who loves creating high-quality products for internal users and teams,
                 </span>
                 <span class="js-tippy" data-tippy-content="What experience do I have?">
-                    I have 3 years of experience developing <b>backend</b> and  <b>front-end</b> applications, mainly using PHP and its ecosystems such as <b>Laravel</b> and <b>CodeIgniter</b>.
-                </span>
-                <span class="js-tippy" data-tippy-content="What challenges do I like?">
-                    Learning new things is also an exciting challenge for me!
+                    with over four years of experience in enterprise web-based projects such as ERP (Enterprise Resource Planning), E-commerce, E-catalog, and other application related to accounting, purchasing, and marketing.
                 </span>
             HTML,
         ],
-        /**
-         * Apart from intermediate and basic categories, you can also add other new categories.
-         */
         'skills' => [
-            'intermediate' => [
-                ['name' => 'PHP', 'icon' => 'php'],
-                ['name' => 'Laravel', 'icon' => 'laravel'],
-                ['name' => 'CodeIgniter', 'icon' => 'codeigniter'],
-                ['name' => 'RESTful API', 'icon' => 'swagger'],
-                ['name' => 'PostgreSQL', 'icon' => 'postgresql'],
-                ['name' => 'MySQL', 'icon' => 'mysql'],
-                ['name' => 'JavaScript', 'icon' => 'javascript'],
-                ['name' => 'jQuery', 'icon' => 'jquery'],
-            ],
-            'basic' => [
-                ['name' => 'Git', 'icon' => 'git'],
-                ['name' => 'GitHub Actions', 'icon' => 'github'],
-                ['name' => 'Tailwind', 'icon' => 'tailwindcss'],
-                ['name' => 'Bootstrap', 'icon' => 'bootstrap'],
-                ['name' => 'Docker', 'icon' => 'docker'],
-            ],
+            ['name' => 'PHP', 'icon' => 'php'],
+            ['name' => 'Tailwind', 'icon' => 'tailwindcss'],
+            ['name' => 'Node.js', 'icon' => 'nodedotjs'],
+            ['name' => 'Alpine.js', 'icon' => 'alpinedotjs'],
+            ['name' => 'JavaScript', 'icon' => 'javascript'],
+            ['name' => 'MySQL', 'icon' => 'mysql'],
+            ['name' => 'TypeScript', 'icon' => 'typescript'],
+            ['name' => 'Git', 'icon' => 'git'],
+            ['name' => 'Laravel', 'icon' => 'laravel'],
+            ['name' => 'GitHub Actions', 'icon' => 'github'],
+            ['name' => 'NestJs', 'icon' => 'nestjs'],
+            ['name' => 'Docker', 'icon' => 'docker'],
         ],
         'projects' => [
             [
+                'title' => 'Lyricstify',
+                'description' => 'Command line based application to show synchronized Spotify lyrics in your terminal.',
+                'stacks' => ['Node.js', 'TypeScript', 'NestJs', 'RxJs'],
+                'links' => [
+                    [
+                        'name' => 'GitHub',
+                        'icon' => 'github',
+                        'url' => 'https://github.com/lyricstify/lyricstify',
+                    ],
+                    [
+                        'name' => 'NPM',
+                        'icon' => 'npm',
+                        'url' => 'https://www.npmjs.com/package/@lyricstify/lyricstify',
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Basement Chat',
+                'description' => 'Real-time chat widget package for your Laravel application with flexible broadcast driver support.',
+                'stacks' => ['PHP', 'Laravel', 'TypeScript', 'AlpineJS', 'TailwindCSS'],
+                'links' => [
+                    [
+                        'name' => 'GitHub',
+                        'icon' => 'github',
+                        'url' => 'https://github.com/basement-chat/basement-chat',
+                    ],
+                    [
+                        'name' => 'Packagist',
+                        'icon' => 'packagist',
+                        'url' => 'https://packagist.org/packages/basement-chat/basement-chat',
+                    ],
+                ],
+            ],
+            [
                 'title' => 'Laravel Books API',
-                'description' => 'An application to scrape data and provide results in a RESTful API format.',
+                'description' => 'Fully documented & tested Laravel 9 RESTful books API scraped from Gramedia.',
                 'stacks' => ['PHP', 'Laravel'],
                 'links' => [
                     [
@@ -87,30 +110,8 @@ return [
                 ],
             ],
             [
-                'title' => 'CodeIgniter 3 IDE Helper',
-                'description' => 'CLI application to generate IDE helper for CodeIgniter 3.',
-                'stacks' => ['PHP', 'Docker', 'CI/CD (GitHub Actions)'],
-                'links' => [
-                    [
-                        'name' => 'GitHub',
-                        'icon' => 'github',
-                        'url' => 'https://github.com/yusuftaufiq/codeigniter3-ide-helper',
-                    ],
-                    [
-                        'name' => 'Packagist',
-                        'icon' => 'packagist',
-                        'url' => 'https://packagist.org/packages/haemanthus/codeigniter3-ide-helper',
-                    ],
-                    [
-                        'name' => 'Docker Hub',
-                        'icon' => 'docker',
-                        'url' => 'https://hub.docker.com/repository/docker/haemanthus/codeigniter3-ide-helper',
-                    ],
-                ],
-            ],
-            [
                 'title' => 'Personal Portfolio Page',
-                'description' => 'The page you are viewing now.',
+                'description' => 'Simple, responsive, and configurable static personal portfolio page.',
                 'stacks' => ['JavaScript', 'Blade', 'Tailwind CSS'],
                 'links' => [
                     [
@@ -137,6 +138,11 @@ return [
                 'name' => 'LinkedIn',
                 'url' => 'https://www.linkedin.com/in/yusuftaufiq/',
             ],
+            [
+                'icon' => 'reddit',
+                'name' => 'Reddit',
+                'url' => 'https://www.reddit.com/user/yusuftaufiq',
+            ]
         ],
     ],
 ];

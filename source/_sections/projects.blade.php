@@ -1,7 +1,7 @@
 <x-section>
   <div class="my-2 flex flex-col space-y-4 text-center">
     <x-section.title>Projects</x-section.title>
-    <p class="text-lg text-center">Here are the best projects I've ever worked on.</p>
+    <p class="text-lg text-center">Here are the best open source projects I've ever worked on.</p>
   </div>
   <div class="w-full flex flex-row items-center">
     <x-swiper.horizontal-nav type="previous" label="See previous projects" class="projects-swiper-button-prev"/>
